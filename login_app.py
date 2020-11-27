@@ -59,3 +59,5 @@ while True:
             print("You logged in sucessfully. Welcome %s" % user_name)
         else:
             print("Account does not exist or you entered user name or password wrong!")
+    else:
+        print("I don't understand. Please enter a valid command...")
