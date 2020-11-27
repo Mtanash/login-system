@@ -10,7 +10,8 @@ def user_exist(username, password):
     accounts_file_data = accounts_file.readlines()
     exist = False
     for i in range(len(accounts_file_data)):
-        if username in accounts_file_data[i] and password in accounts_file_data[i]:
+        splited_data = accounts_file_data[i].split()
+        if username == splited_data[0] and password == splited_data[2]:
             exist = True
             break
     accounts_file.close()
